@@ -1,0 +1,3 @@
+function printSheet() {
+    window.print();
+}
