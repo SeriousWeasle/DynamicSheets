@@ -5,8 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Dynamic Sheets - 5e</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='./css/main.css'>
-    <link rel='stylesheet' type='text/css' href='./css/sheet_5e.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/sheet_5e.css'>
 </head>
 <body>
     <div id="character-sheet">
@@ -39,6 +39,21 @@
                     <input id="char-eyes" class="char-top-low" onchange="updateSheetTopParam(this.id, this.value)">
                     <input id="char-hair" class="char-top-low" onchange="updateSheetTopParam(this.id, this.value)">
                     <input id="char-skin" class="char-top-low" onchange="updateSheetTopParam(this.id, this.value)">
+                </div>
+            </div>
+
+            <div id="main-block-container">
+                <div id="left-statblock">
+                    <div id="inspiration-container" class="left-statblock-object">
+                        <input id="char-inspiration">
+                    </div>
+                    <div id="proficiency-mod-container" class="left-statblock-object">
+                        <input id="char-proficiency">
+                    </div>
+
+                    <div id="strength-block-container" class="left-statblock-object">
+
+                    </div>
                 </div>
             </div>
         </div>
