@@ -3,27 +3,45 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Dynamic Sheets</title>
+    <title>Dynamic Sheets - 5e</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' href='./css/sheet_5e.css'>
     <script src='./js/main.js'></script>
 </head>
 <body>
-    <div id="sheet-container">
-        <img src="./img/sheet-5e.jpg">
-    </div>
-    <div id="fields-container">
-        <div id="top-bar-container">
-            <div class="top-row-container">
-                <input id="char-name">
-                <input id="char-class">
-                <input id="char-level">
-                <input id="char-race">
-                <input id="char-subrace">
-                <input id="char-current-xp">
-                <input id="char-xp-levelup">
+    <div id="character-sheet">
+        <div id="sheet-image-container">
+            <img id="sheet-img" src="./img/sheet-5e.jpg">
+        </div>
+        <div id="fields-container">
+            <div id="top-bar-container">
+                <div class="top-row-container">
+                    <input id="char-name" class="char-top-top">
+                    <input id="char-class" class="char-top-top">
+                    <input id="char-level" class="char-top-top">
+                    <input id="char-race" class="char-top-top">
+                    <input id="char-subrace" class="char-top-top">
+                    <input id="char-current-xp" class="char-top-top">
+                    <input id="char-xp-levelup" class="char-top-top">
+                </div>
+                <div class="top-row-container" class="char-top-mid">
+                    <input id="char-background" class="char-top-mid">
+                    <input id="char-alignment" class="char-top-mid">
+                    <input id="char-religion" class="char-top-mid">
+                    <input id="char-languages" class="char-top-mid">
+                </div>
+                <div class="top-row-container">
+                    <input id="char-size" class="char-top-low">
+                    <input id="char-gender" class="char-top-low">
+                    <input id="char-age" class="char-top-low">
+                    <input id="char-height" class="char-top-low">
+                    <input id="char-weight" class="char-top-low">
+                    <input id="char-eyes" class="char-top-low">
+                    <input id="char-hair" class="char-top-low">
+                    <input id="char-skin" class="char-top-low">
+                </div>
             </div>
-            <button onclick="printSheet()">print</button>
         </div>
     </div>
 </body>
